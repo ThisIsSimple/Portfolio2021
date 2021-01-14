@@ -1,0 +1,31 @@
+@import "../../variables";
+
+$icon-border-size: 3px;
+.icon {
+  width: 100%;
+  padding-top: calc(100% - 6px);
+  position: relative;
+  background-color: white;
+
+  border: $icon-border-size solid white;
+  border-radius: 50%;
+  overflow: hidden;
+
+  box-shadow: $box-shadow;
+
+  .img-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  transition: .15s;
+}

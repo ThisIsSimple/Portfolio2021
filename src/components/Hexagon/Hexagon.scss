@@ -1,0 +1,10 @@
+.hexagon {
+  max-width: 150px;
+  transform: rotate(90deg);
+
+  &:hover {
+    transform: rotate(90deg) scale(1.1);
+  }
+
+  transition: .15s;
+}

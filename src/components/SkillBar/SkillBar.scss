@@ -1,0 +1,39 @@
+@import "../../variables";
+
+$skill-name-text-width: 120px;
+.skill-container {
+  height: 30px;
+  background-color: lightgray;
+
+  display: flex;
+  align-items: center;
+
+  .skill-name-text {
+    background-color: $primary;
+    color: white;
+
+    width: $skill-name-text-width;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill-bar-container {
+    position: relative;
+    width: calc(100% - 120px);
+    height: 100%;
+
+    .skill-bar {
+      background-color: lighten($primary, 15%);
+      height: 100%;
+    }
+
+    .skill-level-text {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

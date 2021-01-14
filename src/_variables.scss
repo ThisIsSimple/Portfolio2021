@@ -1,0 +1,24 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+$primary: #311b79;
+$danger: #ff4136;
+
+$theme-colors: (
+        "primary": $primary,
+        "danger": $danger
+);
+
+$space-start: #040932;
+$space-end: #22125e;
+
+// Create your own map
+$custom-colors: (
+        "space": #080f4a
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "~bootstrap/scss/bootstrap";
